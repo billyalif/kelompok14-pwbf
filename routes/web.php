@@ -12,7 +12,34 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+}); //GAUSA DIAPA2IN
+
+
+Route::get('/home', function () {
+    return view('home');
 });
+
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/login', function () {
+    return view('login');
+});
+
+Route::get('/form', function () {
+    return view('form');
+});
+
+Route::get('/pendataan', function () {
+    return view('pendataan');
+});
+
+Route::get('/pemesanan', function () {
+    return view('pemesanan');
+});
+
+
+
